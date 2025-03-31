@@ -1,0 +1,1 @@
+{let r=0,a=null;a=setInterval(()=>{try{var e,t=document.body.getAttribute("savior-decoded-meta-formats");t&&(clearInterval(a),e=JSON.parse(t),chrome.runtime.sendMessage(null,{type:"script_executed",data:{url:e,data:e}})),20<r?clearInterval(a):r++}catch(e){clearInterval(a),chrome.runtime.sendMessage(null,{type:"script_executed"})}},300)}

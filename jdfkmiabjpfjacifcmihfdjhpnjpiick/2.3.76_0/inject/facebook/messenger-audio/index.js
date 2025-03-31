@@ -1,0 +1,1 @@
+function t(e,t){chrome.runtime.sendMessage(null,{type:"script_executed",data:{data:{origin:"facebook.com",url:e,username:t}}}).catch(()=>{})}try{setTimeout(()=>{t(null)},1e3)}catch(e){t(null)}
